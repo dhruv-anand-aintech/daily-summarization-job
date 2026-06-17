@@ -3,6 +3,8 @@ out/
 logs/
 dist/
 node_modules/
+__pycache__/
+scripts/__pycache__/
 *.local
 *.json
 !.vscode/extensions.json

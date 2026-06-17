@@ -1,0 +1,8 @@
+.env
+out/
+logs/
+dist/
+node_modules/
+*.local
+*.json
+!.vscode/extensions.json

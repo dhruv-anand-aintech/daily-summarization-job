@@ -1,5 +1,7 @@
 # Daily Summarization Job
 
+![Daily Summarization Job pipeline](assets/daily-summarization-infographic.svg)
+
 Reusable procedure for a local daily work summarization job.
 
 This public repo intentionally contains only scripts, prompts, and setup notes.

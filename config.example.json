@@ -1,0 +1,25 @@
+{
+  "timezone": "Asia/Kolkata",
+  "code_root": "~/Code",
+  "updates_url_template": "https://updates.example.com/?day={date}",
+  "report_email_to": "you@example.com",
+  "project_names_path": "config/project_names.json",
+  "project_kanban_path": "~/Code/project-kanban-vault/PROJECTS-KANBAN.md",
+  "browser_history": {
+    "enabled": false,
+    "chromium_profiles": []
+  },
+  "transcripts": {
+    "codex_sessions": "~/.codex/sessions",
+    "claude_projects": "~/.claude/projects",
+    "cursor_projects": "~/.cursor/projects"
+  },
+  "deploy": {
+    "build_command": "npm run build",
+    "deploy_command": "wrangler deploy"
+  },
+  "agent": {
+    "command": "agl",
+    "args": ["--non-interactive", "--prefer", "codex", "--mode", "danger", "--model-class", "fast"]
+  }
+}

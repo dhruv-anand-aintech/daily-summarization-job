@@ -2,7 +2,7 @@
 
 ## Scheduled Run
 
-Use a single runner script as the source of truth.
+Use `scripts/run_daily_report.sh` as the source of truth.
 
 ```sh
 scripts/run_daily_report.sh YYYY-MM-DD
@@ -35,3 +35,15 @@ git add out/YYYY-MM-DD/report.md src/generated/reports.json
 git commit -m "Add daily report for YYYY-MM-DD"
 git push
 ```
+
+## Codex Exec Job Config
+
+The default runner calls:
+
+```sh
+agl --non-interactive --prefer codex --cwd "$REPO_DIR" --mode danger --model-class fast --prompt-file "$PROMPT_FILE"
+```
+
+Override the binary with `AGENT_BIN=/path/to/agl`. Edit `config.json` for the
+deploy command, report URL template, email recipient, kanban path, and source
+roots. Keep `config.json` private if it contains local paths or recipients.

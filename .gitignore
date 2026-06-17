@@ -6,3 +6,5 @@ node_modules/
 *.local
 *.json
 !.vscode/extensions.json
+!config.example.json
+!config/project_names.json
